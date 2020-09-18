@@ -1,5 +1,4 @@
 import discord
-print("test") #disregard this, was printing to test something
 from chat import chat
 
 def read_token():
