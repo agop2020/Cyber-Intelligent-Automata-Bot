@@ -13,6 +13,8 @@ def chat_bot(msg):
     return chat(msg)
 
 @client.event
+async def on_ready():
+    await client.change_presence(status=discord.Status.online, activity=discord.Game('hackerman'))
 async def on_message(message):
     # print("message2")
     #id = client.get_guild(ID)
